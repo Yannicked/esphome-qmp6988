@@ -14,7 +14,7 @@ from esphome.const import (
 from esphome.core import coroutine
 from . import QMP6988Component, CONF_QMP6988_ID
 
-DEPENDENCIES = ["QMP6988"]
+DEPENDENCIES = ["qmp6988"]
 
 TYPES = {
     CONF_TEMPERATURE: "set_temperature_sensor",
