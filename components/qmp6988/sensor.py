@@ -49,7 +49,7 @@ def setup_conf(config, key, hub, funcName):
         cg.add(func(var))
 
 
-def to_code(config):
-    hub = yield cg.get_variable(config[CONF_QMP6988_ID])
+async def to_code(config):
+    hub = await cg.get_variable(config[CONF_QMP6988_ID])
     for key, funcName in TYPES.items():
-        yield setup_conf(config, key, hub, funcName)
+        await setup_conf(config, key, hub, funcName)
