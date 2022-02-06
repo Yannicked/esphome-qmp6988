@@ -9,7 +9,7 @@ AUTO_LOAD = ['sensor']
 CODEOWNERS = ["@yannicked"]
 DEPENDENCIES = ["i2c"]
 
-CONF_QMP6988_ID = "QMP6988_id"
+CONF_QMP6988_ID = "qmp6988_id"
 
 qmp6988_ns = cg.esphome_ns.namespace("qmp6988")
 
